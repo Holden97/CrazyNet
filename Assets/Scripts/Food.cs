@@ -1,6 +1,4 @@
 ﻿using UnityEngine;
-using UnityEngine.PlayerLoop;
-
 namespace Script
 {
     public class Food
@@ -14,7 +12,7 @@ namespace Script
 
             if (rb == null)
                 return;
-            var belt= rb.gameObject.GetComponent<Belt>();
+            var belt= rb.gameObject.GetComponent<ConveyorBelt>();
         }
 
         public void Update()
